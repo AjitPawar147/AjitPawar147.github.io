@@ -1,137 +1,221 @@
-/* ===== BASE RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajit Pawar | Data Science Portfolio</title>
 
-body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background-color: #f3f4f6;
-  color: #111827;
-  line-height: 1.7;
-}
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #0f172a;
+      --soft-bg: #f8fafc;
+      --text-dark: #111827;
+      --text-light: #6b7280;
+    }
 
-/* ===== LAYOUT ===== */
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* ===== HEADER ===== */
-header {
-  background-color: #111827;
-  color: #ffffff;
-  text-align: center;
-  padding: 60px 20px 50px;
-}
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: var(--soft-bg);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
 
-header h1 {
-  font-size: 34px;
-  font-weight: 600;
-  margin-top: 15px;
-}
+    header {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-header p {
-  font-size: 17px;
-  margin-top: 8px;
-  color: #d1d5db;
-}
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+    }
 
-/* ===== PROFILE PHOTO ===== */
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ffffff;
-}
+    header h1 {
+      font-size: 34px;
+      margin-top: 15px;
+    }
 
-/* ===== SECTION CARDS ===== */
-section {
-  background-color: #ffffff;
-  margin-top: 35px;
-  padding: 30px 35px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-}
+    header p {
+      font-size: 17px;
+      margin-top: 8px;
+      color: #d1d5db;
+    }
 
-section h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  color: #111827;
-}
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-/* ===== TEXT ===== */
-p {
-  font-size: 16px;
-  color: #374151;
-}
+    section {
+      background: white;
+      margin-bottom: 35px;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
 
-/* ===== PROJECTS ===== */
-.project {
-  margin-bottom: 22px;
-}
+    section h2 {
+      font-size: 22px;
+      margin-bottom: 18px;
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
 
-.project h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1f2937;
-}
+    .project {
+      padding: 15px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
 
-.project p {
-  margin-top: 6px;
-  font-size: 15px;
-}
+    .project:last-child {
+      border-bottom: none;
+    }
 
-/* ===== SKILLS ===== */
-.skills {
-  margin-top: 10px;
-}
+    .project h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
 
-.skills span {
-  display: inline-block;
-  background-color: #e5e7eb;
-  color: #111827;
-  padding: 6px 14px;
-  margin: 6px 6px 0 0;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 500;
-}
+    .project:hover h3 {
+      color: var(--primary);
+    }
 
-/* ===== LINKS ===== */
-a {
-  color: #2563eb;
-  text-decoration: none;
-}
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
 
-a:hover {
-  text-decoration: underline;
-}
+    .button:hover {
+      background-color: #1e40af;
+      transform: translateY(-1px);
+    }
 
-/* ===== FOOTER ===== */
-footer {
-  margin-top: 50px;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 14px;
-  color: #6b7280;
-}
-.button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background-color: #2563eb;
-  color: #ffffff;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 500;
-}
+    .skills span {
+      display: inline-block;
+      background-color: #eef2ff;
+      color: #1e3a8a;
+      padding: 6px 14px;
+      margin: 6px 6px 0 0;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
 
-.button:hover {
-  background-color: #1d4ed8;
-}
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
 
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="Ajit_Photo.jpeg" alt="Ajit Pawar" class="profile-img">
+  <h1>Ajit Pawar</h1>
+  <p>Aspiring Data Scientist | Machine Learning | Python</p>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am an aspiring data scientist passionate about data analysis, machine learning,
+      and solving real-world business problems through data-driven solutions.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>House Prices Prediction (Gurgaon)</h3>
+      <p>Built machine learning models to predict real estate prices in Gurgaon.</p>
+      <a href="https://github.com/AjitPawar147/House-Price-Prediction" target="_blank" class="button">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Tata Motors Stock Prediction</h3>
+      <p>Predicted stock prices using ML, saved trained models, and generated prediction reports.</p>
+      <a href="https://github.com/AjitPawar147/Tatamotors-stock-prediction" target="_blank" class="button">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Customer Churn Prediction</h3>
+      <p>Analyzed customer behavior to predict churn and help businesses improve retention.</p>
+      <a href="https://github.com/AjitPawar147/Customer_Churn_Prediction" target="_blank" class="button">
+        View on GitHub
+      </a>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Machine Learning</span>
+      <span>SQL</span>
+      <span>Data Visualization</span>
+      <span>Deep Learning</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: ajitpawar147496@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/ajitpawar147" target="_blank">github.com/ajitpawar147</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ajit-pawar-460002321" target="_blank">View Profile</a></p>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Ajit Pawar
+</footer>
+
+</body>
+</html>
