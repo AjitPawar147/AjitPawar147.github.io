@@ -3,38 +3,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 /* ===== BODY ===== */
 body {
-  background-color: #f4f6f8;
-  color: #333;
+  background-color: #f5f7fa;
+  color: #1f2933;
   line-height: 1.6;
 }
 
 /* ===== CONTAINER ===== */
 .container {
   max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 /* ===== HEADER ===== */
 header {
-  background: #0f172a;
-  color: white;
-  padding: 40px 20px;
+  background-color: #0f172a; /* Navy */
+  color: #ffffff;
   text-align: center;
+  padding: 50px 20px;
 }
 
 header h1 {
   font-size: 36px;
-  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 header p {
   font-size: 18px;
+  margin-top: 8px;
   color: #cbd5e1;
 }
 
@@ -43,34 +44,44 @@ header p {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  border: 4px solid white;
   object-fit: cover;
+  border: 4px solid #ffffff;
   margin-bottom: 15px;
 }
 
 /* ===== SECTIONS ===== */
 section {
-  background: white;
-  margin: 20px 0;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background-color: #ffffff;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 section h2 {
+  font-size: 22px;
   margin-bottom: 15px;
   color: #0f172a;
-  border-left: 4px solid #2563eb;
+  border-left: 5px solid #2563eb; /* Accent Blue */
   padding-left: 10px;
 }
 
-/* ===== PROJECT CARDS ===== */
+/* ===== TEXT ===== */
+p, li {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+/* ===== PROJECTS ===== */
 .project {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .project h3 {
+  font-size: 18px;
   color: #2563eb;
+  font-weight: 600;
 }
 
 .project p {
@@ -80,17 +91,30 @@ section h2 {
 /* ===== SKILLS ===== */
 .skills span {
   display: inline-block;
-  background: #e5e7eb;
-  color: #111827;
-  padding: 6px 12px;
-  margin: 5px;
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  padding: 6px 14px;
+  margin: 6px 6px 0 0;
   border-radius: 20px;
   font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* ===== FOOTER ===== */
 footer {
+  margin-top: 50px;
   text-align: center;
-  padding: 15px;
+  font-size: 14px;
   color: #6b7280;
 }
