@@ -19,6 +19,7 @@ body {
   background: #020617;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .navbar .logo {
@@ -45,9 +46,9 @@ body {
 /* HERO */
 .hero {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 80px 60px;
+  align-items: center;
+  padding: 90px 60px;
 }
 
 .hero-text {
@@ -67,18 +68,16 @@ body {
   color: #94a3b8;
 }
 
-.hero-image img {
-  width: 350px;
-  border-radius: 50%;
-  border: 6px solid #38bdf8;
+.buttons {
+  margin-top: 25px;
 }
 
-/* BUTTONS */
 .btn {
-  padding: 12px 22px;
+  padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  margin-right: 15px;
 }
 
 .primary {
@@ -89,6 +88,16 @@ body {
 .secondary {
   border: 2px solid #38bdf8;
   color: #38bdf8;
+}
+
+/* PERFECT CIRCLE PHOTO */
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #38bdf8;
+  box-shadow: 0 0 40px rgba(56,189,248,0.45);
 }
 
 /* SECTIONS */
@@ -102,7 +111,11 @@ body {
   color: #38bdf8;
 }
 
-.alt {
+.section ul {
+  margin-left: 20px;
+}
+
+.dark {
   background: #020617;
 }
 
@@ -119,6 +132,28 @@ body {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 30px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
 }
