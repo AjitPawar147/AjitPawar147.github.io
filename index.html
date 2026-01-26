@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Your Name | Data Scientist Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajit Pawar | Data Scientist</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ===== NAVBAR ===== -->
 <nav class="navbar">
-  <div class="logo">Ajit Pawar</div>
-  <ul class="nav-links">
+  <div class="logo">YourName</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -21,121 +22,145 @@
   </ul>
 </nav>
 
-<!-- HERO -->
-<header class="hero">
-  <img src="Ajit_Photo.jpeg" alt="Ajit Pawar" class="profile-img">
-  <h1>Ajit Pawar</h1>
-  <p>Aspiring Data Scientist • Python • Machine Learning</p>
-  <a href="Ajit_Resume.pdf" class="btn" download>Download Resume</a>
-</header>
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Hi, I’m <span>Your Name</span></h1>
+    <h3>Aspiring Data Scientist | AI & Data Science Engineer</h3>
+    <p>
+      Passionate about transforming data into meaningful insights and building
+      intelligent solutions using machine learning and analytics.
+    </p>
 
-<main class="container">
+    <div class="buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="resume.pdf" class="btn secondary" target="_blank">Download Resume</a>
+    </div>
+  </div>
 
-<!-- ABOUT -->
-<section id="about" class="card">
+  <div class="hero-img">
+    <img src="profile.jpg" alt="Profile Photo">
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
   <h2>About Me</h2>
   <p>
-    I am an aspiring Data Scientist with a strong passion for data analysis,
-    machine learning, and solving real-world problems using data.
+    I am an aspiring Data Scientist with a strong foundation in statistics,
+    machine learning, and data analysis. I enjoy working with real-world datasets
+    to uncover patterns, build predictive models, and support data-driven
+    decision making.
   </p>
   <p>
-    I enjoy working with data to extract insights, build predictive models,
-    and support data-driven decision making. I have hands-on experience with
-    Python, data preprocessing, exploratory data analysis, and ML algorithms.
-  </p>
-  <p>
-    I continuously upskill myself through internships, certifications, and
-    real-world projects to become industry-ready.
+    My interests include data visualization, exploratory data analysis,
+    supervised and unsupervised learning, and deploying data science solutions
+    in practical environments.
   </p>
 </section>
 
-<!-- EDUCATION -->
-<section id="education" class="card">
+<!-- ===== EDUCATION ===== -->
+<section class="section" id="education">
   <h2>Education</h2>
-  <ul>
-    <li><strong>SSC</strong> – H.E.S High School, Hiwara (S) — <b>82.80%</b></li>
-    <li><strong>HSC</strong> – H.E.S High School, Hiwara (S) — <b>87.17%</b></li>
-    <li><strong>B.E (Artificial Intelligence & Data Science)</strong><br>
-        Currently Pursuing – Third Year
-    </li>
-  </ul>
+
+  <div class="card">
+    <h3>Bachelor of Engineering (3rd Year)</h3>
+    <p>Artificial Intelligence & Data Science</p>
+    <span>Currently Pursuing</span>
+  </div>
+
+  <div class="card">
+    <h3>HSC – 87.17%</h3>
+    <p>H.E.S High School, Hiwara (S)</p>
+  </div>
+
+  <div class="card">
+    <h3>SSC – 82.80%</h3>
+    <p>H.E.S High School, Hiwara (S)</p>
+  </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="card">
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
   <h2>Experience</h2>
-  <p><strong>Data Science Intern</strong> — HexSoftwares Private Limited</p>
-  <p>
-    Completed a 1-month internship where I worked on real-world data science tasks
-    including data cleaning, analysis, and machine learning model development.
-    Gained practical exposure to end-to-end data science workflows.
-  </p>
+
+  <div class="card">
+    <h3>Data Science Intern</h3>
+    <p>HexSoftwares Private Limited</p>
+    <span>1 Month Internship</span>
+    <p>
+      Worked on data preprocessing, exploratory data analysis, and basic
+      machine learning models. Gained hands-on experience with real datasets
+      and industry workflows.
+    </p>
+  </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="card">
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
   <h2>Projects</h2>
 
-  <div class="project">
-    <h3>House Price Prediction (Gurgaon)</h3>
-    <p>
-      Built a machine learning model to predict house prices using features such as
-      location, area, and property attributes. Focused on data preprocessing,
-      feature engineering, and model evaluation.
-    </p>
-  </div>
-
-  <div class="project">
-    <h3>Tata Motors Stock Price Prediction</h3>
-    <p>
-      Developed a stock price prediction system using historical market data.
-      Implemented time-series analysis and generated output comparing actual and
-      predicted prices.
-    </p>
-  </div>
-
-  <div class="project">
+  <div class="card">
     <h3>Customer Churn Prediction</h3>
     <p>
-      Created a churn prediction model by analyzing customer behavior, services,
-      and billing data to help businesses identify at-risk customers and improve
-      retention strategies.
+      Developed a machine learning model to predict customer churn using
+      classification algorithms. Performed data cleaning, feature engineering,
+      model evaluation, and visualization.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Sales Data Analysis</h3>
+    <p>
+      Analyzed large sales datasets to identify trends, seasonal patterns,
+      and business insights using Python and data visualization techniques.
     </p>
   </div>
 </section>
 
-<!-- TOOLS -->
-<section id="tools" class="card">
+<!-- ===== TOOLS ===== -->
+<section class="section" id="tools">
   <h2>Tools & Technologies</h2>
-  <ul>
-    <li><strong>Jupyter Lab</strong> – Data analysis, visualization & ML experiments</li>
-    <li><strong>VS Code</strong> – Python development & project structuring</li>
-    <li><strong>Git & GitHub</strong> – Version control & portfolio hosting</li>
-  </ul>
-</section>
 
-<!-- CERTIFICATION -->
-<section class="card">
-  <h2>Certification</h2>
-  <p>
-    <strong>Ultimate Job-Ready Data Science Course</strong><br>
-    Code With Harry
+  <div class="tools">
+    <span>Python</span>
+    <span>Jupyter Lab</span>
+    <span>VS Code</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Matplotlib</span>
+    <span>Scikit-Learn</span>
+  </div>
+
+  <p class="tool-desc">
+    I primarily use Jupyter Lab for experimentation and analysis, while VS Code
+    helps in writing clean, structured, and production-ready code.
   </p>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="card contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:ajitpawar147496@gmail.com">ajitpawar147496@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/AjitPawar147" target="_blank">github.com/AjitPawar147</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/ajit-pawar-460002321" target="_blank">
-    linkedin.com/in/ajit-pawar-460002321</a></p>
+<!-- ===== CERTIFICATION ===== -->
+<section class="section">
+  <h2>Certification</h2>
+
+  <div class="card">
+    <h3>Ultimate Job-Ready Data Science Course</h3>
+    <p>Code With Harry</p>
+  </div>
 </section>
 
-</main>
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact">
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="#">github.com/yourusername</a></p>
+  </div>
+</section>
 
 <footer>
-  © 2026 Ajit Pawar
+  © 2026 Your Name | Data Science Portfolio
 </footer>
 
 </body>
