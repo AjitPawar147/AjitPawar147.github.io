@@ -4,6 +4,21 @@
   <title>Education | Ajit Pawar</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  document.querySelectorAll('a').forEach(link => {
+    if (link.hostname === window.location.hostname) {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = link.href;
+        document.body.classList.add('slide-out');
+        setTimeout(() => {
+          window.location.href = target;
+        }, 400);
+      });
+    }
+  });
+</script>
+
 <body>
 
 <nav class="navbar">...</nav>
