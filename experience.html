@@ -6,16 +6,42 @@
 </head>
 <body>
 
-<nav class="navbar">...</nav>
+<nav class="navbar">
+  <div class="logo">Ajit Pawar</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="tools.html">Tools</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
 
 <section class="content">
   <h2>Experience</h2>
   <ul>
     <li>Data Science Intern – Company Name</li>
-    <li>Worked on ML models, data analysis & visualization</li>
+    <li>Worked on ML models, data preprocessing, and visualization</li>
   </ul>
 </section>
 
 <footer>© 2026 Ajit Pawar</footer>
+
+<script>
+document.querySelectorAll('a').forEach(link => {
+  if (link.hostname === window.location.hostname) {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = link.href;
+      document.body.classList.add('slide-out');
+      setTimeout(() => {
+        window.location.href = target;
+      }, 400);
+    });
+  }
+});
+</script>
+
 </body>
 </html>
